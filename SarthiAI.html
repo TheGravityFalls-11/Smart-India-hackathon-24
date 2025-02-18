@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="course.css" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/chat.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>My Courses</title>
+  
+</head>
+<body>
+    <section id="dashboard">
+        <div class="header">
+            <a href="index.html">
+                <img src="images/Logo.png" alt="Logo">
+            </a>
+            <div class="cred">
+                <p>Welcome <span id="name" style="font-weight: bold;">Mrinal Paul</span></p>
+                <img class="user" src="images/user.jpg">
+            </div>
+        </div>
+    </section>
+    
+  <div class="container">
+    <div class="main-content">
+        <div class="chat-container">
+          <div id="chatbox">
+            <h5 id="chat-timestamp"></h5>
+            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+          </div>
+          <div class="chat-bar-input-block">
+            <div id="userInput">
+              <input id="textInput" class="input-box" type="text" name="msg" placeholder="Tap 'Enter' to send a message">
+              <p></p>
+            </div>
+            <div class="chat-bar-icons">
+              <i id="chat-icon" style="color: rgb(0, 0, 0);" class="fa fa-fw fa-question" onclick="questionButton()"></i>
+              <i id="chat-icon" style="color: #000000;" class="fa fa-fw fa-send" onclick="sendButton()"></i>
+            </div>
+          </div>
+          <div id="chat-bar-bottom"><p></p></div>
+        </div>
+      </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="static/scripts/responses.js"></script>
+    <script src="static/scripts/chat.js"></script> 
+    </div>
+
+    <div class="sidebar">
+    <ul>
+        <li><a href="#dashboard" id="Dashboard">Dashboard</a></li>
+        <li><a href="course.html" id="myCourses">My Courses</a></li> 
+        <li><a href="#" id="ProgressReport">Progress Report</a></li> 
+        <li><a href="#" id="Timetable">Prepare Timetable</a></li> 
+        <li><a href="#" id="Quiz">Lets Play!</a></li> 
+        <li><a href="SarthiAI.html" id="AISarthi">AI Sarthi</a></li> 
+        <li><a href="#" id="community">Peer Community</a></li> 
+        <li><a href="#" id="accounts">Accounts</a></li>   
+    </ul>
+    </div>
+  </div>
+</body>
+</html>
